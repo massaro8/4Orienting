@@ -27,6 +27,7 @@ const highlightMenu = () =>{
         homeMenu.classList.add('highlight')
         testMenu.classList.remove('highlist')
         orientamentoMenu.classList.remove('highlist')
+        borseMenu.classList.remove('highligh')
         return
     }else if (window.innerWidth > 960 && scrollPos > 1400){
         testMenu.classList.add('highlight')
@@ -34,10 +35,18 @@ const highlightMenu = () =>{
         borseMenu.classList.remove('highlight')
         homeMenu.classList.remove('highlight')
         return
-    }else if (window.innerWidth > 960 && scrollPos > 2345){
-        testMenu.classList.add('highlight')
+    }else if (window.innerWidth > 960 && scrollPos > 1500){
+        orientamentoMenu.classList.add('highlight')
+        testMenu.classList.remove('highlight')
+        borseMenu.classList.remove('highlight')
+        homeMenu.classList.remove('highlight')
+        return
+    }
+    else if (window.innerWidth > 960 && scrollPos > 1600){
+        borseMenu.classList.add('highlight')
         orientamentoMenu.classList.remove('highlight')
         borseMenu.classList.remove('highlight')
+        homeMenu.classList.remove('highlight')
         return
     }
 

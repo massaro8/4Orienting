@@ -7,7 +7,7 @@
 }
 
 .navbar {
-  background: #0059b3;
+  background: black;
   height: 100px;
   display: flex;
   justify-content: center;
@@ -19,6 +19,7 @@
 }
 
 .navbar__container {
+  background: black;
   display: flex;
   justify-content: space-between;
   text-align: center;
@@ -26,12 +27,14 @@
   z-index: 1;
   width: 100%;
   margin: 0;
+  margin-top: 0;
+  position: fixed;
 }
 
 #navbar__logo {
-  width: 150px;
-  height: 150px;
-  padding-bottom: 30px;
+  padding-top: 5px;
+  width: 90px;
+  height: 90px;
 }
 
 .navbar__menu {
@@ -47,8 +50,6 @@
 .navbar__links {
   color: #fff;
   display: flex;
-  align-items: center;
-  text-align: center;
   justify-content: center;
   width: 125px;
   text-decoration: none;
@@ -57,11 +58,15 @@
 }
 
 .navbar__links {
-  color: #ff0844;
+  color: #fff;
+  font-family: poppins;
+  font-size: 20px;
   transition: all 0.3s ease;
+  text-align: center;
+  align-items: center;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1020px) {
   .navbar__container {
     display: flex;
     justify-content: space-between;
@@ -93,9 +98,6 @@
     z-index: 99;
     height: 60vh;
     font-size: 1.6rem;
-  }
-  #navbar__logo {
-    padding-left: 25px;
   }
 
   .navbar__toogle .bar {
@@ -143,7 +145,7 @@
 /*HERO SECTION */
 
 .hero {
-  background: #0059b3;
+  background: green;
   /* background: linear-gradient(to right, cyan, #fff); */
   height: 500px;
 }
@@ -158,4 +160,18 @@
   /* background: linear-gradient(to right, cyan, #fff); */
   margin-top: 500px;
   height: 200px;
+}
+.descrizione {
+  text-align: center;
+  height: 50px;
+  font-size: 20px;
+  background: cyan;
+}
+
+.sfondo {
+  margin: 0;
+  height: 500px;
+  width: 1920px;
+  background-image: url("sfondoprimario.png");
+  background-repeat: no-repeat;
 }
